@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Build script to update the repository, needs to be run on a linux system with the arch build tools installed
+
+cd x86_64
+repo-add SCDF-pacman.db.tar.zst *.pkg.tar.zst
+
+# remove the symlinks since they don't work with github/lab
+rm SCDF-pacman.db
+rm SCDF-pacman.files
+
+mv SCDF-pacman.db.tar.zst SCDF-pacman.db
+mv SCDF-pacman.files.tar.zst SCDF-pacman.files
+
+# push the package updates
+git add -u
+git commit -m "package update $date -u +%D-%R:%S"
+git push
