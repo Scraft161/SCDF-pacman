@@ -14,5 +14,5 @@ mv SCDF-pacman.files.tar.zst SCDF-pacman.files
 
 # push the package updates
 git add -u
-git commit -m "package update $date -u +%D-%R:%S"
+git commit -m "package update $(date -u +%D-%R:%S)"
 git push
