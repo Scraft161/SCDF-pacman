@@ -8,7 +8,7 @@ official builds are x86_64 only, but most packages have a `${pkgname}-src` versi
 
 ## Add to your system
 add the following to your `/etc/pacman.conf`:
-```toml
+```conf
 # SCDF-pacman repository
 [SCDF-pacman]
 SigLevel = Optional TrustAll
