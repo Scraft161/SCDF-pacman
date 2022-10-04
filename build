@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Build script to update the repository, needs to be run on a linux system with the arch build tools installed
+cd ~/Projects/SCDF-pacman/
 
 cd x86_64
 repo-add SCDF-pacman.db.tar.zst *.pkg.tar.zst
@@ -13,6 +14,6 @@ mv SCDF-pacman.db.tar.zst SCDF-pacman.db
 mv SCDF-pacman.files.tar.zst SCDF-pacman.files
 
 # push the package updates
-git add -u
+git add ./
 git commit -m "package update $(date -u +%D-%R:%S)"
 git push
