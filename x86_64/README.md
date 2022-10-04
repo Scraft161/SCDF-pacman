@@ -18,5 +18,7 @@ Server = https://raw.githubusercontent.com/Scraft161/$repo/master/$arch/
 note that if you run a 32-bit or arm version of arch that you might not see any packages.
 
 ## Contributing packages
-As of now we do not accept contributed packages as we are still getting our own packages and build system online.
-Please be patient while we do so.
+~~As of now we do not accept contributed packages as we are still getting our own packages and build system online.
+Please be patient while we do so.~~
+
+Contact me on discord `Scraft161#7470` while we get the proper submission process up.
